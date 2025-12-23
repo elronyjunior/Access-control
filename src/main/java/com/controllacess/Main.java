@@ -1,7 +1,10 @@
 package com.controllacess;
 
+import com.controllacess.Service.PowershellService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        PowershellService power = new PowershellService();
+        power.createThread();
     }
 }
