@@ -23,6 +23,11 @@
         <artifactId>javafx-fxml</artifactId>
         <version>21</version>
     </dependency>
+    <dependency>
+    <groupId>com.github.vatbub</groupId>
+    <artifactId>mslinks</artifactId>
+    <version>1.0.6.2</version>
+</dependency>
 </dependencies>
 
 <build>

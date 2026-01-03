@@ -1,8 +1,14 @@
 module com.controllacess {
     requires javafx.controls;
     requires javafx.fxml;
+    requires mslinks;
 
-    // Permite que o JavaFX acesse sua classe principal
+   
     opens com.controllacess to javafx.fxml;
+    // --- ADICIONE ESTA LINHA NOVA ---
+    // Isso libera o acesso à pasta "Controller" para o JavaFX funcionar
+    opens com.controllacess.Controller to javafx.fxml;
+
     exports com.controllacess;
+    
 }
